@@ -1,5 +1,5 @@
 # data_corrected.yaml
-path: datasets  # 数据集所在路径
+path: datasets # 数据集所在路径
 train: images/train
 val: images/val
 test: images/test
@@ -19,7 +19,7 @@ names:
   10: Glass Bottle
   11: Light Bulb
   12: Fluorescent Lamp
-  13: Aluminium Can
+  13: Aluminum Can
   14: Cardboard
   15: Battery
   16: Charger
@@ -30,4 +30,4 @@ names:
   21: Computer Mouse
   22: Computer Keyboard
 
-nc: 23  # 类别数量
+nc: 23 # 类别数量
