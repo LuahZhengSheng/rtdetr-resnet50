@@ -190,14 +190,14 @@ def validate_args(format, passed_args, valid_args):
     Args:
         format (str): The export format.
         passed_args (Namespace): The arguments used during export.
-        valid_args (list): List of valid arguments for the format.
+        valid_args (list): List of val arguments for the format.
 
     Raises:
         AssertionError: If an unsupported argument is used, or if the format lacks supported argument listings.
     """
     export_args = ["half", "int8", "dynamic", "keras", "nms", "batch", "fraction"]
 
-    assert valid_args is not None, f"ERROR ❌️ valid arguments for '{format}' not listed."
+    assert valid_args is not None, f"ERROR ❌️ val arguments for '{format}' not listed."
     custom = {"batch": 1, "data": None, "device": None}  # exporter defaults
     default_args = get_cfg(DEFAULT_CFG, custom)
     for arg in export_args:
@@ -397,7 +397,7 @@ class Exporter:
                 f"Invalid processor name '{self.args.name}' for Rockchip RKNN export. Valid names are {RKNN_CHIPS}."
             )
         if self.args.nms:
-            assert not isinstance(model, ClassificationModel), "'nms=True' is not valid for classification models."
+            assert not isinstance(model, ClassificationModel), "'nms=True' is not val for classification models."
             assert not tflite or not ARM64 or not LINUX, "TFLite export with NMS unsupported on ARM64 Linux"
             assert not is_tf_format or TORCH_1_13, "TensorFlow exports with NMS require torch>=1.13"
             assert not onnx or TORCH_1_13, "ONNX export with NMS requires torch>=1.13"

@@ -267,7 +267,7 @@ def test_config_update_method_with_invalid_argument():
         obj.update(invalid_key=123)
         assert False, "Expected ValueError for invalid update argument"
     except ValueError as e:
-        assert "is not a valid solution argument" in str(e)
+        assert "is not a val solution argument" in str(e)
 
 
 def test_plot_with_no_masks():

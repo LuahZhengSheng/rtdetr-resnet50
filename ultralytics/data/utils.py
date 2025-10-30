@@ -542,8 +542,8 @@ def check_cls_dataset(dataset: str | Path, split: str = "") -> dict[str, Any]:
         if (data_dir / "val").exists()
         else data_dir / "validation"
         if (data_dir / "validation").exists()
-        else data_dir / "valid"
-        if (data_dir / "valid").exists()
+        else data_dir / "val"
+        if (data_dir / "val").exists()
         else None
     )  # data/test or data/val
     test_set = data_dir / "test" if (data_dir / "test").exists() else None  # data/val or data/test

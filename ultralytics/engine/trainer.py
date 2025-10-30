@@ -223,7 +223,7 @@ class BaseTrainer:
             if self.args.batch < 1.0:
                 raise ValueError(
                     "AutoBatch with batch<1 not supported for Multi-GPU training, "
-                    f"please specify a valid batch size multiple of GPU count {self.world_size}, i.e. batch={self.world_size * 8}."
+                    f"please specify a val batch size multiple of GPU count {self.world_size}, i.e. batch={self.world_size * 8}."
                 )
 
             # Command
@@ -818,7 +818,7 @@ class BaseTrainer:
 
             except Exception as e:
                 raise FileNotFoundError(
-                    "Resume checkpoint not found. Please pass a valid checkpoint to resume from, "
+                    "Resume checkpoint not found. Please pass a val checkpoint to resume from, "
                     "i.e. 'yolo train resume model=path/to/last.pt'"
                 ) from e
         self.resume = resume
