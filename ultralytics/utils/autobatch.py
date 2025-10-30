@@ -94,7 +94,7 @@ def autobatch(
         xy = [
             [x, y[2]]
             for i, (x, y) in enumerate(zip(batch_sizes, results))
-            if y  # valid result
+            if y  # val result
             and isinstance(y[2], (int, float))  # is numeric
             and 0 < y[2] < t  # between 0 and GPU limit
             and (i == 0 or not results[i - 1] or y[2] > results[i - 1][2])  # first item or increasing memory

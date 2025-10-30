@@ -51,10 +51,10 @@ def is_url(url: str | Path, check: bool = False) -> bool:
         check (bool, optional): If True, performs an additional check to see if the URL exists online.
 
     Returns:
-        (bool): True for a valid URL. If 'check' is True, also returns True if the URL exists online.
+        (bool): True for a val URL. If 'check' is True, also returns True if the URL exists online.
 
     Examples:
-        >>> valid = is_url("https://www.example.com")
+        >>> val = is_url("https://www.example.com")
         >>> valid_and_exists = is_url("https://www.example.com", check=True)
     """
     try:
@@ -160,7 +160,7 @@ def unzip_file(
         (Path): The path to the directory where the zipfile was extracted.
 
     Raises:
-        BadZipFile: If the provided file does not exist or is not a valid zipfile.
+        BadZipFile: If the provided file does not exist or is not a val zipfile.
 
     Examples:
         >>> from ultralytics.utils.downloads import unzip_file

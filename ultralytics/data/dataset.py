@@ -188,7 +188,7 @@ class YOLODataset(BaseDataset):
         labels = cache["labels"]
         if not labels:
             raise RuntimeError(
-                f"No valid images found in {cache_path}. Images with incorrectly formatted labels are ignored. {HELP_URL}"
+                f"No val images found in {cache_path}. Images with incorrectly formatted labels are ignored. {HELP_URL}"
             )
         self.im_files = [lb["im_file"] for lb in labels]  # update im_files
 
@@ -434,7 +434,7 @@ class GroundingDataset(YOLODataset):
 
     Examples:
         >>> dataset = GroundingDataset(img_path="path/to/images", json_file="annotations.json", task="detect")
-        >>> len(dataset)  # Number of valid images with annotations
+        >>> len(dataset)  # Number of val images with annotations
     """
 
     def __init__(self, *args, task: str = "detect", json_file: str = "", max_samples: int = 80, **kwargs):
@@ -820,7 +820,7 @@ class ClassificationDataset:
         Verify all images in dataset.
 
         Returns:
-            (list): List of valid samples after verification.
+            (list): List of val samples after verification.
         """
         desc = f"{self.prefix}Scanning {self.root}..."
         path = Path(self.root).with_suffix(".cache")  # *.cache file path
