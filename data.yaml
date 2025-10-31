@@ -9,25 +9,25 @@ names:
   0: HDPE Plastic
   1: Multi-layer Plastic
   2: PET Bottle
-  3: Single-use Plastic
-  4: Single-layer Plastic
-  5: Squeeze-tube
-  6: UHT-Box
-  7: Polystyrene
-  8: Paper
-  9: Paper Cup
-  10: Glass Bottle
-  11: Light Bulb
-  12: Fluorescent Lamp
-  13: Aluminium Can
-  14: Cardboard
-  15: Battery
-  16: Charger
-  17: Smartphone
-  18: Laptop
-  19: Monitor
-  20: Printer
-  21: Computer Mouse
-  22: Computer Keyboard
+#  3: Single-use Plastic
+#  4: Single-layer Plastic
+#  5: Squeeze-tube
+#  6: UHT-Box
+#  7: Polystyrene
+#  8: Paper
+#  9: Paper Cup
+#  10: Glass Bottle
+#  11: Light Bulb
+#  12: Fluorescent Lamp
+#  13: Aluminium Can
+#  14: Cardboard
+#  15: Battery
+#  16: Charger
+#  17: Smartphone
+#  18: Laptop
+#  19: Monitor
+#  20: Printer
+#  21: Computer Mouse
+#  22: Computer Keyboard
 
-nc: 23  # 类别数量
+nc: 3  # 类别数量
