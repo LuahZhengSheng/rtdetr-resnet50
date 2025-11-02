@@ -1,5 +1,5 @@
 # data_corrected.yaml
-path: datasets  # 数据集所在路径
+path: /kaggle/input/waste-22-categories/optimized_waste_dataset  # 数据集所在路径
 train: images/train
 val: images/val
 test: images/test
