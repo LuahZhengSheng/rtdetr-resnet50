@@ -2,3 +2,7 @@
 runs/detect/train/weights/*.pt filter=lfs diff=lfs merge=lfs -text
 runs/detect/val/weights/*.pt filter=lfs diff=lfs merge=lfs -text
 runs/**/*.pt filter=lfs diff=lfs merge=lfs -text
+runs/**/*.pth filter=lfs diff=lfs merge=lfs -text
+runs/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+runs/**/*.png filter=lfs diff=lfs merge=lfs -text
+*.pth filter=lfs diff=lfs merge=lfs -text
