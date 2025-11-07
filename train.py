@@ -5,7 +5,7 @@ warnings.filterwarnings('ignore')
 model = RTDETR('ultralytics/cfg/models/rt-detr/rtdetr-resnet50.yaml')
 results = model.train(
     data='data.yaml',
-    epochs=100,
+    epochs=150,
     imgsz=640,
     batch=8,
     device=0,
